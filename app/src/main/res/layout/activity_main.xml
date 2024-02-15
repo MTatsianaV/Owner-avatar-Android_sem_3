@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/skipNext"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@null"
+        android:src="@drawable/skip_next"
+        app:layout_constraintBottom_toBottomOf="@+id/playCircle"
+        app:layout_constraintStart_toEndOf="@+id/playCircle"
+        app:layout_constraintTop_toTopOf="@+id/playCircle"/>
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/skipPrevious"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/skip_previous"
+        app:layout_constraintEnd_toStartOf="@+id/playCircle"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintTop_toTopOf="@+id/playCircle"
+        app:layout_constraintBottom_toBottomOf="@+id/playCircle"/>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="382dp"
+        android:layout_height="219dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/playCircle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/play_circle"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture"/>
+
+    <TextView
+        android:id="@+id/singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playCircle"
+        app:layout_constraintVertical_bias="0.176"/>
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
